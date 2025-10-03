@@ -4,10 +4,10 @@
       <img src="IMG_0190.jpeg" alt="Katelyn!" width="200"/>
     <p>This is me in Aruba. My sister took this picture of me and it is one of my favorites!</p>
   <p>What would you like to know about me?</p>
-  <a href="hobbies/hobbies.html">hobbies</a>
   <form>   
     <label>Choose a topic:</label>
-    <select>    
+    <select onchange="window.location.href = this.value + '/' + this.value + '.html'">
+        <option value="choose one">Choose One</option>    
         <option value="hobbies">Hobbies</option>    
         <option value="family">Family</option>    
         <option value="friends">Friends</option>
