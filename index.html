@@ -1,28 +1,74 @@
 <head>
   <style>
+    body {
+      margin: 0;
+      display: flex;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
     .back-button {
       position: fixed;
       top: 20px;
       right: 10px;
     }
+    .left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+    .left img {
+      width: 80%;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(154, 130, 130, 0);
+    }
+    .right {
+      flex: 1;
+      background: linear-gradient(90deg, rgb(127, 159, 168) 0%, rgb(84, 138, 166) 100%);}
+    .right h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      margin-left: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .options {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; /* controls space between options */
+      margin-top: 40px;
+      margin-left: 250px;
+    }
+    .option {
+      color: white;
+      text-decoration: none;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      transition: color 0.3s ease;
+    }
+    .option:hover {
+      color: #09c2ec; /* pink hover color */
+    }
   </style>
 </head>
 <body>
-  <h1>About Me: Katelyn Xue</h1>
-  <a href="index.html" class="back-button">Back to Home</a>
-  <p></p>
-  <img src="IMG_0190.jpeg" alt="Katelyn!" width="200"/>
-    <p>This is me in Aruba. My sister took this picture of me and it is one of my favorites!</p>
-  <p>What would you like to know about me?</p>
-  <form>   
-    <label>Choose a topic:</label>
-    <select onchange="window.location.href = this.value + '/' + this.value + '.html'">
-        <option value="choose one">Choose One</option>    
-        <option value="hobbies">Hobbies</option>    
-        <option value="family">Family</option>    
-        <option value="friends">Friends</option>
-        <option value="future">Future</option>
-        <option value="volleyball">Volleyball</option>
-    </select>
-  </form>
+  <a href="index.html" class="back-button"></a>
+
+  <div class="left">
+    <img src="IMG_0190.jpeg" alt="Katelyn!">
+  </div>
+  <div class="right">
+    <h1>About Me: Katelyn Xue</h1>
+
+    <div class="options">
+      <a href="hobbies/hobbies.html" class="option">Hobbies</a>
+      <a href="family/family.html" class="option">Family</a>
+      <a href="friends/friends.html" class="option">Friends</a>
+      <a href="future/future.html" class="option">Future</a>
+      <a href="volleyball/volleyball.html" class="option">Volleyball</a>
+      <audio src="audio/young-and-beautiful.mp3" controls></audio>
+    </div>
+  </div>
+  
 </body>
