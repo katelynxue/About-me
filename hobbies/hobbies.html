@@ -7,6 +7,30 @@
             top: 20px;
             right: 10px;
             }
+            .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+            }
+            .left {
+            left: 0;
+            background-color: #111;
+            }
+            .right {
+            right: 0;
+            background-color: red;
+            }
+            .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
         </style>
     </head>
     <p></p>
@@ -15,24 +39,15 @@
     <p>This is a picture of my favorite book series right now</p>
     <img>
     <p>This is a couple of books I am reading right now</p>
-    <form>
-        <label>Books I recomend:</label>
-        <select onchange="window.location.href = this.value + '/' + this.value + '.html'">
-            <option value="choose one">Choose One</option>
-            <option value="ACOTAR Series">ACOTAR Series</option>
-            <option value="Fourth Wing Series">Fourth Wing Series</option>
-            <option value="Ruthless Creatures Series">Ruthless Creatures Series</option>
-            <option value="Throne of Glass Series">Throne of Glass Series</option>
-        </select>
-    </form>
-    <p>Another thing I love to do in my free time is watch F1</p>
-    <img src="F1.jpg" alt="F1!" width="300"/>
-    <form>
-        <label>Learn more about my favorite drivers:</label>
-        <select onchange="window.location.href = this.value + '/' + this.value + '.html'">
-            <option value="choose one">Choose One</option>
-            <option value="Max Verstappen">Max Verstappen</option>
-            <option value="Lando Norris">Lando Norris </option>
-        </select>
-    </form>
+    <div class="split left">
+        <div class="centered">
+        <a href="/hobbies/books/books.html"><img src="download.jpg" alt="books" style="width:500px;height:500;"></a>        
+        </div> 
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+        <a href="/hobbies/F1/F1.html"><img src="F1.jpg" alt="F1" style="width:500px;height:500px;"></a>        
+        </div>
+    </div>
 </body>

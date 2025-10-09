@@ -1,0 +1,59 @@
+<h1>Books Katelyn Loves</h1>
+<head>
+    <style>
+        table {
+        font-family: Arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        th, td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+<table style width="100%">
+    <tr>
+        <th>Book Series</th>
+        <th>Author</th>
+        <th>Rating</th>
+    </tr>
+    <tr>
+        <td>ACOTAR Series</td>
+        <td>Sarah J. Maas</td>
+        <td>9.5/10</td>
+    </tr>
+    <tr>
+        <td>Fourth Wing Series</td>
+        <td>Rebecca Yarros</td>
+        <td>9/10</td>
+    </tr>
+    <tr>
+        <td>Ruthless Creatures Series</td>
+        <td>Kelly St. Clare</td>
+        <td>8.5/10</td>
+    </tr>
+    <tr>
+        <td>Throne of Glass Series</td>
+        <td>Sarah J. Maas</td>
+        <td>9/10</td>
+    </tr>
+</table>
+<form>
+        <label>Books I recomend:</label>
+        <select onchange="window.location.href = this.value + '/' + this.value + '.html'">
+            <option value="choose one">Choose One</option>
+            <option value="ACOTAR Series">ACOTAR Series</option>
+            <option value="Fourth Wing Series">Fourth Wing Series</option>
+            <option value="Ruthless Creatures Series">Ruthless Creatures Series</option>
+            <option value="Throne of Glass Series">Throne of Glass Series</option>
+        </select>
+</form>
+</body>
