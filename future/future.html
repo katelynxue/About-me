@@ -1,21 +1,47 @@
-<h1>Katelyn's Future</h1>
 <head>
-        <style>
-            .back-button {
-            position: fixed;
-            top: 20px;
-            right: 10px;
-            }
-        </style>
+    <style>
+        .back-button {
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        }
+        .sidenav{
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        padding-top: 20px;
+        justify-content: space-evenly;
+        }
+        .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        justify-content: space-evenly;
+        }
+        .sidenav a:hover {
+        color: #f1f1f1;
+        }
+        .main {
+        margin-left: 300px; /* Same as the width of the sidebar */
+        padding: 0px 10px;
+        }
+    </style>
 </head>
-<body style="background: linear-gradient(to right, #b7a5d3, #9383b0,  #6f568e, #5e4978);"  >
-    <h2><b>Real Future</b></h4>
-        <p></p>
-        <a href="../index.html" class="back-button"><b>Back to Home</b></a>
-        <img src="download-1.jpg" alt="Katelyn!" width="350"/>
-        <h3>Next year I will be attending Amherst College to play volleyball. I am super excited to play as a college level and I can't wait to go.</h3>
-    <h2><head><b>Wishful Future</b></h4>
-        <p></p>
-        <img src="download.jpg" alt="Katelyn!" width="350"/>
-        <h3>This is a picture of the Monoco Grand Prix, and its something I want to go to in the future. This is one of my bucket list goals</h3>
+<body>
+    <div class="sidenav">
+        <a href="/future/Near Future/Near Future.html">Near Future</a>
+        <a href="/future/Hopeful Future/Hopeful Future.html">Hopeful Future</a>
+        <a href="/future/Real Future/Real Future.html">Real Future</a>
+    </div>
+    <div class="main">
+        This is my last year at Milton Academy. Next year I will be attending Amherst College. I am very excited to be going to Amherst because it has a great computer science program and a beautiful campus. I am looking forward to meeting new people and experiencing college life. 
+        <img src="download-1.jpg" alt="Amherst College" width="300"/>
+    </div>
 </body>

@@ -1,0 +1,61 @@
+<head>
+    <style>
+        .content{
+            text-align: center;
+            margin-top: 20%;
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+        }
+        .navigation {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 0;
+        }
+        
+        .nav-button {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 15px 25px;
+            font-size: 2em;
+            text-decoration: none;
+            color: white;
+            background-color: #667eea;
+            border-radius: 50%;
+            transition: transform 0.2s, background-color 0.2s;
+            font-weight: bold;
+            z-index: 10;
+        }
+        
+        .nav-button:hover {
+            transform: scale(1.1);
+        }
+        .left {
+            left: 30px;
+        }
+
+        .right {
+            right: 30px;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="center">
+        <h1>Summer Friends</h1>
+        <p>Over the summer I meet lots of new people and made new very important friendships.</p>
+        <p>I am very close with a couple people and the whole summer groups often finds time to have reunions.</p>
+        <img src="ed0f355c5842f9ac28809781cc0a5b7d.JPEG" alt="Summer Friends" width="500"/>
+        </div>
+    </div>
+    
+    <a href="/friends/School Friends/School Friends.html" class="nav-button left">←</a>
+    <a href="/friends/Volleyball Friends/Volleyball Friends.html" class="nav-button right">→</a>
+
+</body>

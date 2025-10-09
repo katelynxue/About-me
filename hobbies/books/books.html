@@ -1,6 +1,33 @@
-<h1>Books Katelyn Loves</h1>
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Book</title>
     <style>
+        .back-button {
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        }
+        .top {
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .top h1 {
+            color: white;
+            font-size: 3em;
+            text-align: center;
+        }
+        .bottom {
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            background-color: #f5f5f5;
+        }
         table {
         font-family: Arial, sans-serif;
         border-collapse: collapse;
@@ -16,44 +43,45 @@
         tr:nth-child(even) {
         background-color: #dddddd;
         }
+        .back-button {
+        position: fixed;
+        top: 20px;
+        right: 10px;
+        }
     </style>
 </head>
 <body>
-<table style width="100%">
+    <div class="top">
+        <h1>Choose Your Book</h1>
+    </div>
+    <a href="../hobbies.html" class="back-button"><b>Back to Hobbies</b></a>
+<div class="bottom">
+    <table style width="100%">
     <tr>
         <th>Book Series</th>
         <th>Author</th>
         <th>Rating</th>
     </tr>
     <tr>
-        <td>ACOTAR Series</td>
+        <td><a href="/hobbies/books/ACOTAR Series/ACOTAR Series.html">ACOTAR Series</a></td>
         <td>Sarah J. Maas</td>
         <td>9.5/10</td>
     </tr>
     <tr>
-        <td>Fourth Wing Series</td>
+        <td><a href="/hobbies/books/Fourth Wing Series/Fourth Wing Series.html">Fourth Wing Series</a></td>
         <td>Rebecca Yarros</td>
         <td>9/10</td>
     </tr>
     <tr>
-        <td>Ruthless Creatures Series</td>
-        <td>Kelly St. Clare</td>
-        <td>8.5/10</td>
+        <td><a href="/hobbies/books/Ruthless Creatures Series/Ruthless Creatures Series.html">Ruthless Creatures Series</a></td>
+        <td>J.T Geissinger</td>
+        <td>8/10</td>
     </tr>
     <tr>
-        <td>Throne of Glass Series</td>
+        <td><a href="/hobbies/books/Throne of Glass Series/Throne of Glass Series.html">Throne of Glass Series</a></td>
         <td>Sarah J. Maas</td>
         <td>9/10</td>
     </tr>
-</table>
-<form>
-        <label>Books I recomend:</label>
-        <select onchange="window.location.href = this.value + '/' + this.value + '.html'">
-            <option value="choose one">Choose One</option>
-            <option value="ACOTAR Series">ACOTAR Series</option>
-            <option value="Fourth Wing Series">Fourth Wing Series</option>
-            <option value="Ruthless Creatures Series">Ruthless Creatures Series</option>
-            <option value="Throne of Glass Series">Throne of Glass Series</option>
-        </select>
-</form>
+    </table>
+    </div>
 </body>
