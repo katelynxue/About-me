@@ -3,71 +3,61 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        h1 {
-        text-align: center;
-        margin: 20px 0;
-        font-size: 2.5rem;
+        .back{
+            position: fixed;
+            top: 20px;
+            right: 10px;
         }
-        .back-button {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        text-decoration: none;
-        transition: 0.3s;
-        z-index: 9999;
-        font-weight: bold;
+        /* https://chatgpt.com/share/68eda6be-9214-8009-a6d4-45b2f6c10803 */
+        table.centered{
+            margin: 50px auto;
+            border-collapse: collapse;
+            text-align: center;
         }
-
-        .back-button:hover {
-        background: #555;
+        th{
+            font-family: Arial, sans-serif;
+            font-size: 1.5em;
+            padding-bottom: 15px;
         }
-        .split-container {
-        display: flex;
-        height: calc(100vh - 100px);
+        td{
+            padding: 20px;
         }
-        
-        .split {
-        height: 100%;
-        width: 50%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        overflow-x: hidden;
-        padding-top: 20px;
+        img{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .left {
-        left: 0;
-        background-color: #3f3e3e;
-        }
-        .right {
-        right: 0;
-        background-color: rgb(169, 69, 69);
-        }
-        .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
+        img:hover{
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.3);
         }
     </style>
 </head>
 <body>
     <p></p>
-    <a href="../index.html" class="back-button"><b>Back to Home</b></a>
-    <img src="download.jpg" alt="Katelyn!" width="300"/>
-    <p>This is a picture of my favorite book series right now</p>
-    <img>
-    <p>This is a couple of books I am reading right now</p>
-    <div class="split left">
-        <div class="centered">
-        <a href="/hobbies/books/books.html"><img src="download.jpg" alt="books" style="width:500px;height:500;"></a>        
-        </div> 
+    <div class="back">
+        <a href="../index.html" class="back-button"><b>Back to Home</b></a>
     </div>
-
-    <div class="split right">
-        <div class="centered">
-        <a href="/hobbies/F1/F1.html"><img src="F1.jpg" alt="F1" style="width:500px;height:500px;"></a>        
-        </div>
-    </div>
+    <table class="centered">
+    <tr>
+        <th colspan="2">Select a Hobby</th>
+    </tr>
+    <tr>
+        <td>
+        <a href="../hobbies/books/books.html">
+            <img src="download.jpg" alt="Books">
+        </a>
+        <div>Books</div>
+        </td>
+        <td>
+        <a href="../hobbies/F1/F1.html">
+            <img src="F1.jpg" alt="F1 Racing">
+        </a>
+        <div>F1 Racing</div>
+        </td>
+    </tr>
+    </table>
 </body>
